@@ -16,3 +16,7 @@
 .card{
     height: 500px !important;
 }
+.product{
+    border : 1px solid rgb(199, 196, 196);
+    box-shadow: 1px 2px 3px gray;
+}

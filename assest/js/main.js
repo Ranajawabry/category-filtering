@@ -80,7 +80,7 @@ const displayProduct = (data) => {
           <h5 class="card-title">${product.title}</h5>
           <span>${product.price} $</span>
            <p class="card-text">${product.description.substring(0, 70)}...</p>
-              <a href="#" class="btn btn-primary">Go somewhere${product.id}</a>
+              <a href="detail.html?id=${product.id}" class="btn btn-primary">Go somewhere</a>
                   </div>
               </div>
                  </div>
