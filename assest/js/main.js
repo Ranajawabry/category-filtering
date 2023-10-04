@@ -21,10 +21,11 @@ const displayCategories = () => {
   let listGroup = document.querySelectorAll(".list-group li");
   listGroup.forEach((item) => {
     item.addEventListener("click", (e) => {
-        let category =e.target.innerHTML;
+        let category =this.innerHTML;
+        // console.log(category)
         clearAcive(listGroup);
         item.classList.add('active');
-        // console.log(category)
+        
       if (e.target.innerHTML ==="All") {
         getAllProduct();
         localStorage.clear()
@@ -80,7 +81,7 @@ const displayProduct = (data) => {
           <h5 class="card-title">${product.title}</h5>
           <span>${product.price} $</span>
            <p class="card-text">${product.description.substring(0, 70)}...</p>
-              <a href="detail.html?id=${product.id}" class="btn btn-primary">Go somewhere</a>
+              <a href="detail.html?id=${product.id}" class="btn btn-primary">read more</a>
                   </div>
               </div>
                  </div>
