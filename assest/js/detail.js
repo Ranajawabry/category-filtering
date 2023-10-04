@@ -48,15 +48,30 @@ const displayImgs=(data)=>{
         result +=
         `
              <div class="col-2">
-              <img src = ${element} class="img-fluid"/>
+              <img src = ${element} class="single-img img-fluid"/>
             </div>
                `
         
     });
     document.querySelector('.text-con .row').innerHTML=result;
+    AddEvent(document.querySelectorAll('.single-img'));
+   console.log(document.querySelectorAll('.single-img')) 
 
 }
 
+const AddEvent= (imags)=>{
+     const mainImg = document.querySelector('.img-con img');
+     console.log(mainImg)
+    imags.forEach((img)=>{
+        img.addEventListener("click",()=>{
+             console.log(img.src)
+           mainImg.setAttribute('src', img.src);
+            
+        })
+       
+
+    })
+}
 
 getProduct();
 
