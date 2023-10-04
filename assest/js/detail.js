@@ -56,5 +56,7 @@ const displayImgs=(data)=>{
     document.querySelector('.text-con .row').innerHTML=result;
 
 }
+
+
 getProduct();
 
